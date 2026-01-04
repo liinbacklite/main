@@ -111,7 +111,7 @@ img {
 const API_BASE = "https://liinbackapis.com";
 
 function loadMessages(langCode) {
-    fetch(`${API_BASE}/api/messages`, { method: "POST" })
+    fetch(`${API_BASE}/api/messages`, { method: "GET" })
     .then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
         const doc = new DOMParser().parseFromString(xml, "text/xml");
@@ -150,5 +150,6 @@ document.getElementById("download-btn").addEventListener("click", () => {
 </script>
 </body>
 </html>
+
 
 
