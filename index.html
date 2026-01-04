@@ -130,33 +130,16 @@ document.getElementById("download-btn").addEventListener("click", async () => {
     const response = await fetch(`${API_BASE}/api/title/get`);
     if (!response.ok) return;
     const blob = await response.blob();
-
-    if ('showSaveFilePicker' in window) {
-        const opts = {
-            suggestedName: "YouTube (Liinback).wad",
-            types: [{
-                description: 'WAD file',
-                accept: { 'application/octet-stream': ['.wad'] },
-            }],
-            excludeAcceptAllOption: true
-        };
-        try {
-            const handle = await window.showSaveFilePicker(opts);
-            const writable = await handle.createWritable();
-            await writable.write(blob);
-            await writable.close();
-        } catch { /* user cancelled */ }
-    } else {
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "YouTube (Liinback).wad";
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
-    }
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "YouTube (Liinback).wad";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
 });
 </script>
 </body>
 </html>
+
