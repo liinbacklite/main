@@ -103,7 +103,7 @@ img {
     <img src="static/logo.png" alt="Logo">
     <div class="description" id="about-text">Loading...</div>
     <div id="news-box">Loading...</div>
-    <button id="download-btn">Download for Wii</button>
+    <a id="download-btn" href="https://liinbackapis.com/api/title/get" download="YouTube (Liinback).wad">Download for Wii</a>
     <div id="guide-box">Loading...</div>
     <div class="credits" id="credits-text">Loading...</div>
 </div>
@@ -131,22 +131,6 @@ function loadMessages(langCode) {
 
 const lang = (navigator.language || "en").slice(0,2);
 loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
-
-document.getElementById("download-btn").addEventListener("click", () => {
-    fetch(`${API_BASE}/api/title/get`, { method: "GET" })
-    .then(r => r.ok ? r.blob() : null)
-    .then(blob => {
-        if (!blob) return;
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
-        a.href = url;
-        a.download = "YouTube (Liinback).wad";
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-        URL.revokeObjectURL(url);
-    });
-});
 </script>
 </body>
 </html>
