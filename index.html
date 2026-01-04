@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liinback</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap" rel="stylesheet">
+<style>
+html, body {
+    width: 100%;
+    margin: 0;
+    font-family: "Noto Sans", "Noto Sans JP", "Hiragino Kaku Gothic Pro", "Meiryo", "MS PGothic", sans-serif;
+    background: url("static/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+.description {
+    margin-top: 16px;
+    max-width: 600px;
+    font-size: 30px;
+    line-height: 1.4;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 0.5s;
+}
+#news-box, #guide-box {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    white-space: pre-line;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+#news-box { animation-delay: 1s; }
+#guide-box {
+    border-radius: 5px;
+    animation-delay: 1.5s;
+}
+#download-btn {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 24px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 1.25s;
+}
+#download-btn:hover {
+    background-color: #f0f0f0;
+}
+.credits {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.4;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 2s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@media (max-width: 700px) {
+    #news-box, #guide-box { font-size: 24px; padding: 16px; }
+    .description { font-size: 24px; }
+    #download-btn { font-size: 20px; padding: 8px 20px; }
+    .credits { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="static/logo.png" alt="Logo">
+    <div class="description" id="about-text">Loading...</div>
+    <div id="news-box">Loading...</div>
+    <button id="download-btn">Download for Wii</button>
+    <div id="guide-box">Loading...</div>
+    <div class="credits" id="credits-text">Loading...</div>
+</div>
+<script>
+const API_BASE = "https://liinbackapis.com";
+
+function loadMessages(langCode) {
+    fetch(`${API_BASE}/api/messages`, { method: "POST" })
+    .then(r => r.ok ? r.text() : Promise.reject())
+    .then(xml => {
+        const doc = new DOMParser().parseFromString(xml, "text/xml");
+        const lang = doc.querySelector(`lang[code="${langCode}"]`);
+        document.getElementById("about-text").textContent = lang?.querySelector("ABOUT")?.textContent.trim() || "Message not found.";
+        document.getElementById("news-box").textContent = lang?.querySelector("STATUS")?.textContent.trim() || "";
+        document.getElementById("guide-box").textContent = lang?.querySelector("GUIDE")?.textContent.trim() || "";
+        document.getElementById("credits-text").textContent = lang?.querySelector("CREDITS")?.textContent.trim() || "";
+    })
+    .catch(() => {
+        document.getElementById("about-text").textContent = "Failed to load message.";
+        document.getElementById("news-box").textContent = "";
+        document.getElementById("guide-box").textContent = "";
+        document.getElementById("credits-text").textContent = "";
+    });
+}
+
+const lang = (navigator.language || "en").slice(0,2);
+loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
+
+document.getElementById("download-btn").addEventListener("click", () => {
+    fetch(`${API_BASE}/api/title/get`, { method: "GET" })
+    .then(r => r.ok ? r.blob() : null)
+    .then(blob => {
+        if (!blob) return;
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "YouTube (Liinback).wad";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+    });
+});
+</script>
+</body>
+</html>
+
+

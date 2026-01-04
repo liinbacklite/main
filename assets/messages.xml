@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages>
+    <lang code="en">
+        <ABOUT>
+            A service that is another revival of the 
+            YouTube application for the Nintendo Wii.
+        </ABOUT>
+        <STATUS>
+• Better video quality
+• Less crashes on video playback and pairing
+• Play videos of any duration with NO limits.
+• As you browse, more videos will be loaded per page with pagination supported.
+• Captions / Subtitles are available
+• Videos might take a while to load, if the channel skips to a new video, 
+  wait for a couple seconds or minutes, then try going back to a previous
+  one you have selected.
+        </STATUS>
+        <CREDITS>
+              "Liinback"
+           author by RedFire,
+              "Invidious" 
+           author by Omar Roth,
+               "YouTube" 
+           author by Google,
+               "YouTube"
+           Wii version licensed by
+               Nintendo,
+            "Nintendo Wii" 
+           author by Nintendo,
+           Helpers:
+            ftde0
+			SMG
+            ljcool2006,
+           Video codec info by
+           SuperrSonic &amp; Wikipedia
+        </CREDITS>
+        <GUIDE>
+                     Requirements:
+       • A computer or a device that allows you to 
+         copy and place contents on your SD card as 
+         long as it's formatted to FAT32.
+       • A modded Nintendo Wii or Wii U (vWii)
+         You can use Dolphin, but that's not the best option
+         as YouTube channel's Flash player displayed on 
+         screen is laggy.
+       • Click on the 'Download' button to download 
+         the WAD.
+       • Get your SD card, copy the WAD you just 
+         downloaded and place it on your 
+         SD card, either in the "wads" folder 
+         or somewhere.
+       • Install the WAD with a WAD manager on 
+         your Wii or Wii U (vWii)
+        </GUIDE>
+    </lang>
+    <lang code="es">
+        <ABOUT>
+            Un servicio que supone otro relanzamiento de la 
+            aplicación de YouTube para la Nintendo Wii.
+        </ABOUT>
+        <STATUS>
+• Mejor calidad de video
+• Menos fallos en la reproducción de videos y emparejamiento
+• Reproducir videos de cualquier duración sin límites.
+• A medida que navegas, se cargarán más videos por página con paginación.
+• Subtítulos / Closed Captions disponibles
+• Es posible que los videos tarden un poco en cargarse. 
+  Si el canal cambia a un video nuevo, espera unos 
+  segundos o minutos y luego intenta volver al video 
+  anterior que habías seleccionado.
+        </STATUS>
+        <CREDITS>
+              "Liinback"
+           autor por RedFire,
+
+              "Invidious" 
+           autor por Omar Roth,
+          
+               "YouTube" 
+           autor por Google,
+           
+               "YouTube"
+           Versión de Wii con licencia de
+               Nintendo,
+               
+            "Nintendo Wii" 
+           autor por Nintendo,
+           
+           Ayudantes:
+            ftde0
+			SMG
+            ljcool2006,
+           
+           Información del códec de video 
+           proporcionada por
+           SuperrSonic &amp; Wikipedia
+        </CREDITS>
+        <GUIDE>
+                     Requisitos:
+       • Una computadora o un dispositivo que le permita 
+         copiar y colocar contenidos en su tarjeta SD 
+         siempre que esté formateada a FAT32.
+
+       • Una Wii o Wii U (vWii) modificada
+         Puede usar Dolphin, pero no es la mejor opción 
+         ya que el reproductor Flash del canal de YouTube 
+         se ve lento.
+
+       • Haga clic en el botón 'Descargar' para descargar 
+         el WAD.
+
+       • Tome su tarjeta SD, copie el WAD que acaba de 
+         descargar y colóquelo en su 
+         tarjeta SD, ya sea en la carpeta "wads" 
+         o en otra ubicación.
+
+       • Instale el WAD con un administrador de WAD en 
+         su Wii o Wii U (vWii)
+        </GUIDE>
+    </lang>
+    <lang code="fr">
+        <ABOUT>
+            Il s'agit d'un service qui constitue une nouvelle 
+            version de l'application YouTube pour la console 
+            Nintendo Wii.
+        </ABOUT>
+        <STATUS>
+• Meilleure qualité vidéo
+• Moins de plantages lors de la lecture et de l'appairage
+• Lire des vidéos de toute durée sans limites.
+• Plus de vidéos seront chargées par page avec pagination.
+• Sous-titres disponibles
+• Le chargement des vidéos peut prendre un certain temps. 
+  Si la chaîne passe à une nouvelle vidéo, attendez 
+  quelques secondes ou minutes, puis essayez de revenir 
+  à la vidéo précédente que vous aviez sélectionnée.
+        </STATUS>
+        <CREDITS>
+              "Liinback"
+           auteur RedFire,
+           
+              "Invidious" 
+           auteur Omar Roth,
+          
+               "YouTube" 
+           auteur Google,
+           
+               "YouTube"
+           Version Wii sous licence de
+               Nintendo,
+               
+            "Nintendo Wii" 
+           auteur Nintendo,
+           
+           Aide:
+            ftde0
+			SMG
+            ljcool2006,
+           
+           Informations sur le codec vidéo par
+           SuperrSonic &amp; Wikipedia
+        </CREDITS>
+        <GUIDE>
+                     Exigences :
+       • Un ordinateur ou un appareil vous permettant de 
+         copier et placer le contenu sur votre carte SD 
+         tant qu'elle est formatée en FAT32.
+
+       • Une Wii ou Wii U (vWii) modifiée
+         Vous pouvez utiliser Dolphin, mais ce n’est pas la meilleure option 
+         car le lecteur Flash de la chaîne YouTube 
+         est lent à l’écran.
+
+       • Cliquez sur le bouton 'Télécharger' pour télécharger 
+         le WAD.
+
+       • Prenez votre carte SD, copiez le WAD que vous venez de 
+         télécharger et placez-le sur votre 
+         carte SD, soit dans le dossier "wads" 
+         ou ailleurs.
+
+       • Installez le WAD avec un gestionnaire de WAD sur 
+         votre Wii ou Wii U (vWii)
+        </GUIDE>
+    </lang>
+    <lang code="it">
+        <ABOUT>
+            Un servizio che rappresenta un'ulteriore 
+            riproposizione dell'applicazione YouTube per 
+            Nintendo Wii.
+        </ABOUT>
+        <STATUS>
+• Migliore qualità video
+• Meno crash durante la riproduzione e l'accoppiamento
+• Riproduzione di video di qualsiasi durata senza limiti.
+• Più video caricati per pagina con paginazione.
+• Sottotitoli disponibili
+• Il caricamento dei video potrebbe richiedere del tempo. 
+  se il canale passa a un nuovo video, attendete qualche 
+  secondo o minuto, quindi provate a tornare al video 
+  precedente che avevate selezionato.
+        </STATUS>
+        <CREDITS>
+              "Liinback"
+           autore RedFire,
+           
+              "Invidious" 
+           autore Omar Roth,
+          
+               "YouTube" 
+           autore Google,
+           
+               "YouTube"
+           Versione Wii con licenza di
+               Nintendo,
+               
+            "Nintendo Wii" 
+           autore Nintendo,
+           
+           Aiutanti:
+            ftde0
+			SMG
+            ljcool2006,
+           
+           Informazioni sul codec video fornite da
+           SuperrSonic &amp; Wikipedia
+        </CREDITS>
+        <GUIDE>
+                     Requisiti:
+       • Un computer o un dispositivo che consenta di 
+         copiare e posizionare i contenuti sulla scheda SD 
+         purché sia formattata in FAT32.
+
+       • Una Wii o Wii U (vWii) modificata
+         Puoi usare Dolphin, ma non è l'opzione migliore 
+         perché il lettore Flash del canale YouTube 
+         è lento sullo schermo.
+
+       • Clicca sul pulsante 'Download' per scaricare 
+         il WAD.
+
+       • Prendi la tua scheda SD, copia il WAD appena 
+         scaricato e posizionalo sulla tua 
+         scheda SD, nella cartella "wads" 
+         o altrove.
+
+       • Installa il WAD con un gestore WAD sulla 
+         tua Wii o Wii U (vWii)
+        </GUIDE>
+    </lang>
+    <lang code="de">
+        <ABOUT>
+            Ein Dienst, der eine weitere Neuauflage der YouTube-
+            Anwendung für die Nintendo Wii darstellt.
+        </ABOUT>
+        <STATUS>
+• Bessere Videoqualität
+• Weniger Abstürze bei Wiedergabe und Kopplung
+• Videos beliebiger Länge abspielbar ohne Limits.
+• Mehr Videos pro Seite mit Pagination geladen.
+• Untertitel verfügbar
+• Das Laden der Videos kann etwas dauern. Falls 
+  der Kanal zu einem neuen Video wechselt, warten 
+  Sie ein paar Sekunden oder Minuten und versuchen 
+  Sie dann, zu einem zuvor ausgewählten Video 
+  zurückzukehren.
+        </STATUS>
+        <CREDITS>
+              "Liinback"
+           Autor RedFire,
+           
+              "Invidious" 
+           Autor Omar Roth,
+          
+               "YouTube" 
+           Autor Google,
+           
+               "YouTube"
+           Wii-Version lizenziert von
+               Nintendo,
+               
+            "Nintendo Wii" 
+           Autor Nintendo,
+           
+           Helfer:
+            ftde0
+			SMG
+            ljcool2006,
+           
+           Video-Codec-Infos von
+           SuperrSonic &amp; Wikipedia
+        </CREDITS>
+        <GUIDE>
+                     Anforderungen:
+       • Ein Computer oder Gerät, das es Ihnen erlaubt, 
+         Inhalte auf Ihre SD-Karte zu kopieren und abzulegen, 
+         solange sie im FAT32-Format ist.
+
+       • Eine modifizierte Nintendo Wii oder Wii U (vWii)
+         Sie können Dolphin verwenden, aber das ist nicht die beste Option, 
+         da der Flash-Player des YouTube-Kanals 
+         auf dem Bildschirm langsam ist.
+
+       • Klicken Sie auf die Schaltfläche 'Download', um 
+         das WAD herunterzuladen.
+
+       • Nehmen Sie Ihre SD-Karte, kopieren Sie das WAD, das Sie gerade 
+         heruntergeladen haben, und legen Sie es auf Ihrer 
+         SD-Karte ab, entweder im "wads"-Ordner 
+         oder anderswo.
+
+       • Installieren Sie das WAD mit einem WAD-Manager auf 
+         Ihrer Wii oder Wii U (vWii)
+        </GUIDE>
+    </lang>
+    <lang code="nl">
+        <ABOUT>
+            Een dienst die een nieuwe versie is van de YouTube-
+            applicatie voor de Nintendo Wii.
+        </ABOUT>
+        <STATUS>
+• Betere videokwaliteit
+• Minder crashes bij video afspelen en koppelen
+• Video's van elke duur afspelen zonder limieten.
+• Meer video's per pagina geladen met paginatie.
+• Ondertiteling beschikbaar
+• Het laden van video's kan even duren. Als het 
+  kanaal overschakelt naar een nieuwe video, wacht 
+  dan een paar seconden of minuten en probeer 
+  vervolgens terug te gaan naar de vorige
+  video die je had geselecteerd.
+        </STATUS>
+        <CREDITS>
+              "Liinback"
+           auteur RedFire,
+           
+              "Invidious" 
+           auteur Omar Roth,
+          
+               "YouTube" 
+           auteur Google,
+           
+               "YouTube"
+           Wii-versie gelicentieerd door
+               Nintendo,
+               
+            "Nintendo Wii" 
+           auteur Nintendo,
+           
+           Hulp:
+            ftde0
+			SMG
+            ljcool2006,
+           
+           Video codec info door
+           SuperrSonic &amp; Wikipedia
+        </CREDITS>
+        <GUIDE>
+                     Vereisten:
+       • Een computer of apparaat waarmee u 
+         inhoud op uw SD-kaart kunt kopiëren en plaatsen, 
+         zolang deze is geformatteerd in FAT32.
+
+       • Een gemodificeerde Nintendo Wii of Wii U (vWii)
+         U kunt Dolphin gebruiken, maar dat is niet de beste optie, 
+         omdat de Flash-speler van het YouTube-kanaal 
+         op het scherm traag is.
+
+       • Klik op de knop 'Download' om 
+         het WAD te downloaden.
+
+       • Pak uw SD-kaart, kopieer het WAD dat u zojuist 
+         hebt gedownload en plaats het op uw 
+         SD-kaart, in de "wads"-map 
+         of ergens anders.
+
+       • Installeer het WAD met een WAD-manager op 
+         uw Wii of Wii U (vWii)
+        </GUIDE>
+    </lang>
+    <lang code="ja">
+        <ABOUT>
+            これは、ニンテンドーWii向けYouTubeアプリケーシ
+            ョンのもう一つの復活版となるサービスです。
+        </ABOUT>
+        <STATUS>
+• ビデオ品質の向上
+• ビデオ再生およびペアリングのクラッシュが減少
+• 長さに関係なく動画を再生可能
+• ページをスクロールすると、ページごとにさらに動画が読み込まれます（ページネーション対応）
+• 字幕 / サブタイトル対応
+• 動画の読み込みには時間がかかる場合があります。チャンネルが次の動画に切り替わった
+  場合は、数秒または数分待ってから、以前に選択した動画に戻ってみてください。
+        </STATUS>
+        <CREDITS>
+              "Liinback"
+           作者 RedFire,
+           
+              "Invidious" 
+           作者 Omar Roth,
+          
+               "YouTube" 
+           作者 Google,
+           
+               "YouTube"
+           Wiiバージョンライセンス提供
+               Nintendo,
+               
+            "Nintendo Wii" 
+           作者 Nintendo,
+           
+           ヘルパー:
+            ftde0
+			SMG
+            ljcool2006,
+           
+           ビデオコーデック情報提供
+           SuperrSonic &amp; Wikipedia
+        </CREDITS>
+        <GUIDE>
+                     必要条件:
+       • コンピュータまたはSDカードに内容をコピーして配置できるデバイス 
+         （FAT32でフォーマットされていること）。
+
+       • 改造済みのNintendo Wii または Wii U (vWii)
+         Dolphinを使用できますが、YouTubeチャンネルのFlashプレーヤーは 
+         画面上で遅く表示されるため最適ではありません。
+
+       • 「Download」ボタンをクリックして 
+         WADをダウンロードします。
+
+       • SDカードを取り、ダウンロードしたWADを 
+         SDカードにコピーします。
+         「wads」フォルダまたは任意の場所に置きます。
+
+       • WiiまたはWii U (vWii)にWADマネージャーでWADをインストールします。
+        </GUIDE>
+    </lang>
+</messages>
