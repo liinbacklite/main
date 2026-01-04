@@ -72,9 +72,7 @@ img {
     animation: fadeIn 1.5s ease-in forwards;
     animation-delay: 1.25s;
 }
-#download-btn:hover {
-    background-color: #f0f0f0;
-}
+#download-btn:hover { background-color: #f0f0f0; }
 .credits {
     margin-top: 40px;
     font-size: 22px;
@@ -86,10 +84,7 @@ img {
     animation: fadeIn 1.5s ease-in forwards;
     animation-delay: 2s;
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @media (max-width: 700px) {
     #news-box, #guide-box { font-size: 24px; padding: 16px; }
     .description { font-size: 24px; }
@@ -111,8 +106,7 @@ img {
 const API_BASE = "https://liinbackapis.com";
 
 function loadMessages(langCode) {
-    fetch(`${API_BASE}/api/messages`, { method: "GET" })
-    .then(r => r.ok ? r.text() : Promise.reject())
+    fetch(`${API_BASE}/api/messages`).then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
         const doc = new DOMParser().parseFromString(xml, "text/xml");
         const lang = doc.querySelector(`lang[code="${langCode}"]`);
@@ -133,8 +127,7 @@ const lang = (navigator.language || "en").slice(0,2);
 loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
 
 document.getElementById("download-btn").addEventListener("click", () => {
-    fetch(`${API_BASE}/api/title/get`, { method: "GET" })
-    .then(r => r.ok ? r.blob() : null)
+    fetch(`${API_BASE}/api/title/get`).then(r => r.ok ? r.blob() : null)
     .then(blob => {
         if (!blob) return;
         const url = URL.createObjectURL(blob);
@@ -150,7 +143,3 @@ document.getElementById("download-btn").addEventListener("click", () => {
 </script>
 </body>
 </html>
-
-
-
-
