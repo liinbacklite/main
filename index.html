@@ -103,12 +103,12 @@ img {
     <img src="static/logo.png" alt="Logo">
     <div class="description" id="about-text">Loading...</div>
     <div id="news-box">Loading...</div>
-    <a id="download-btn" href="https://liinbackapis.com/api/title/get" download="YouTube (Liinback).wad">Download for Wii</a>
+    <a id="download-btn" href="http://liinbackapis.com/api/title/get" download="YouTube (Liinback).wad">Download for Wii</a>
     <div id="guide-box">Loading...</div>
     <div class="credits" id="credits-text">Loading...</div>
 </div>
 <script>
-const API_BASE = "https://liinbackapis.com";
+const API_BASE = "http://liinbackapis.com";
 
 function loadMessages(langCode) {
     fetch(`${API_BASE}/api/messages`, { method: "GET" })
@@ -134,3 +134,4 @@ loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
 </script>
 </body>
 </html>
+
