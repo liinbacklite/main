@@ -108,10 +108,10 @@ img {
     <div class="credits" id="credits-text">Loading...</div>
 </div>
 <script>
-const API_BASE = "http://20.63.76.62";
+const API_BASE = "https://liinbacklite.github.io/main/";
 
 function loadMessages(langCode) {
-    fetch(`${API_BASE}/api/messages`, { method: "GET" })
+    fetch(`${API_BASE}assets/messages.xml, { method: "GET" })
     .then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
         const doc = new DOMParser().parseFromString(xml, "text/xml");
