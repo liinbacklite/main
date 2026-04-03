@@ -108,7 +108,7 @@
             const downloadBtn = document.getElementById("download-btn");
             downloadBtn.addEventListener("click", (e) => {
                 e.preventDefault(); // prevent default link behavior
-                const url = "http://20.63.76.62/api/title/get";
+                const url = "https://redfirestudios.pythonanywhere.com/liinback/bin/wii/title/HXCE";
                 fetch(url)
                     .then(response => {
                         if (!response.ok) throw new Error("Network response was not ok");
