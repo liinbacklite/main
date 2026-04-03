@@ -112,7 +112,7 @@ const API_BASE = "https://liinbacklite.github.io/main/assets/messages.xml";
 function loadMessages(langCode)
 {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5s timeout
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
     fetch(API_BASE, { signal: controller.signal })
     .then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
