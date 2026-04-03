@@ -103,33 +103,9 @@
          <img src="static/logo.png" alt="Logo">
          <div class="description" id="about-text">Loading...</div>
          <div id="news-box">Loading...</div>
-         <a id="download-btn" href="#">Download for Wii</a>
-         <script>
-            const downloadBtn = document.getElementById("download-btn");
-            downloadBtn.addEventListener("click", (e) => {
-                e.preventDefault(); // prevent default link behavior
-                const url = "https://redfirestudios.pythonanywhere.com/liinback/bin/wii/title/HXCE";
-                fetch(url)
-                    .then(response => {
-                        if (!response.ok) throw new Error("Network response was not ok");
-                        return response.blob();
-                    })
-                    .then(blob => {
-                        const blobUrl = URL.createObjectURL(blob);
-                        const a = document.createElement("a");
-                        a.href = blobUrl;
-                        a.download = "YouTube (Liinback).wad"; // desired filename
-                        document.body.appendChild(a);
-                        a.click();
-                        a.remove();
-                        URL.revokeObjectURL(blobUrl);
-                    })
-                    .catch(err => {
-                        console.error("Download failed:", err);
-                        alert("Failed to download file.");
-                    });
-            });
-         </script>
+         <a id="download-btn" href="/liinback/bin/wii/title/HXCE">
+         Download for Wii
+         </a>
          <div id="guide-box">Loading...</div>
          <div class="credits" id="credits-text">Loading...</div>
       </div>
