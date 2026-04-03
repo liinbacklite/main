@@ -114,7 +114,7 @@ function loadMessages(langCode) {
     fetch(API_BASE)
     .then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
-        const doc = new DOMParser().parseFromString(xmlText, "text/xml");
+        const doc = new DOMParser().parseFromString(xml, "text/xml");
         const lang = doc.querySelector(`lang[code="${langCode}"]`);
         document.getElementById("about-text").textContent = lang?.querySelector("ABOUT")?.textContent.trim() || "Message not found.";
         document.getElementById("news-box").textContent = lang?.querySelector("STATUS")?.textContent.trim() || "";
@@ -129,6 +129,9 @@ function loadMessages(langCode) {
     });
 }
 
+const lang = (navigator.language || "en").slice(0,2);
+loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
+</script>
 const lang = (navigator.language || "en").slice(0,2);
 loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
 </script>
