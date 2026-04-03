@@ -111,9 +111,13 @@ img {
 const API_BASE = "https://liinbacklite.github.io/main/assets/messages.xml";
 
 function loadMessages(langCode) {
-    fetch(API_BASE)
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5s timeout
+
+    fetch(API_BASE, { signal: controller.signal })
     .then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
+        clearTimeout(timeoutId);
         const doc = new DOMParser().parseFromString(xml, "text/xml");
         const lang = doc.querySelector(`lang[code="${langCode}"]`);
         document.getElementById("about-text").textContent = lang?.querySelector("ABOUT")?.textContent.trim() || "Message not found.";
@@ -121,7 +125,8 @@ function loadMessages(langCode) {
         document.getElementById("guide-box").textContent = lang?.querySelector("GUIDE")?.textContent.trim() || "";
         document.getElementById("credits-text").textContent = lang?.querySelector("CREDITS")?.textContent.trim() || "";
     })
-    .catch(() => {
+    .catch(err => {
+        console.error("Failed to load messages:", err);
         document.getElementById("about-text").textContent = "Failed to load message.";
         document.getElementById("news-box").textContent = "";
         document.getElementById("guide-box").textContent = "";
