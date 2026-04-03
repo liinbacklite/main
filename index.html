@@ -108,13 +108,13 @@ img {
     <div class="credits" id="credits-text">Loading...</div>
 </div>
 <script>
-const API_BASE = "http://20.63.76.62/";
+const API_BASE = "https://liinbacklite.github.io/main/assets/messages.xml";
 
 function loadMessages(langCode) {
-    fetch(`${API_BASE}messages, { method: "POST" })
+    fetch(API_BASE)
     .then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
-        const doc = new DOMParser().parseFromString(xml, "text/xml");
+        const doc = new DOMParser().parseFromString(xmlText, "text/xml");
         const lang = doc.querySelector(`lang[code="${langCode}"]`);
         document.getElementById("about-text").textContent = lang?.querySelector("ABOUT")?.textContent.trim() || "Message not found.";
         document.getElementById("news-box").textContent = lang?.querySelector("STATUS")?.textContent.trim() || "";
