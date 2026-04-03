@@ -109,11 +109,10 @@ img {
 </div>
 <script>
 const API_BASE = "https://liinbacklite.github.io/main/assets/messages.xml";
-
-function loadMessages(langCode) {
+function loadMessages(langCode)
+{
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 5000); // 5s timeout
-
     fetch(API_BASE, { signal: controller.signal })
     .then(r => r.ok ? r.text() : Promise.reject())
     .then(xml => {
@@ -133,14 +132,6 @@ function loadMessages(langCode) {
         document.getElementById("credits-text").textContent = "";
     });
 }
-
 const lang = (navigator.language || "en").slice(0,2);
 loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
 </script>
-const lang = (navigator.language || "en").slice(0,2);
-loadMessages(["es","fr","it","de","nl","ja"].includes(lang) ? lang : "en");
-</script>
-</body>
-</html>
-
-
