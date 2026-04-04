@@ -10,7 +10,6 @@
 • Less crashes on video playback and pairing
 • Play videos of any duration with NO limits.
 • As you browse, more videos will be loaded per page with pagination supported.
-• Captions / Subtitles are available
 • Videos might take a while to load, if the channel skips to a new video, 
   wait for a couple seconds or minutes, then try going back to a previous
   one you have selected.
@@ -63,7 +62,6 @@
 • Menos fallos en la reproducción de videos y emparejamiento
 • Reproducir videos de cualquier duración sin límites.
 • A medida que navegas, se cargarán más videos por página con paginación.
-• Subtítulos / Closed Captions disponibles
 • Es posible que los videos tarden un poco en cargarse. 
   Si el canal cambia a un video nuevo, espera unos 
   segundos o minutos y luego intenta volver al video 
@@ -129,7 +127,6 @@
 • Moins de plantages lors de la lecture et de l'appairage
 • Lire des vidéos de toute durée sans limites.
 • Plus de vidéos seront chargées par page avec pagination.
-• Sous-titres disponibles
 • Le chargement des vidéos peut prendre un certain temps. 
   Si la chaîne passe à une nouvelle vidéo, attendez 
   quelques secondes ou minutes, puis essayez de revenir 
@@ -194,7 +191,6 @@
 • Meno crash durante la riproduzione e l'accoppiamento
 • Riproduzione di video di qualsiasi durata senza limiti.
 • Più video caricati per pagina con paginazione.
-• Sottotitoli disponibili
 • Il caricamento dei video potrebbe richiedere del tempo. 
   se il canale passa a un nuovo video, attendete qualche 
   secondo o minuto, quindi provate a tornare al video 
@@ -258,7 +254,6 @@
 • Weniger Abstürze bei Wiedergabe und Kopplung
 • Videos beliebiger Länge abspielbar ohne Limits.
 • Mehr Videos pro Seite mit Pagination geladen.
-• Untertitel verfügbar
 • Das Laden der Videos kann etwas dauern. Falls 
   der Kanal zu einem neuen Video wechselt, warten 
   Sie ein paar Sekunden oder Minuten und versuchen 
@@ -323,7 +318,6 @@
 • Minder crashes bij video afspelen en koppelen
 • Video's van elke duur afspelen zonder limieten.
 • Meer video's per pagina geladen met paginatie.
-• Ondertiteling beschikbaar
 • Het laden van video's kan even duren. Als het 
   kanaal overschakelt naar een nieuwe video, wacht 
   dan een paar seconden of minuten en probeer 
@@ -388,7 +382,6 @@
 • ビデオ再生およびペアリングのクラッシュが減少
 • 長さに関係なく動画を再生可能
 • ページをスクロールすると、ページごとにさらに動画が読み込まれます（ページネーション対応）
-• 字幕 / サブタイトル対応
 • 動画の読み込みには時間がかかる場合があります。チャンネルが次の動画に切り替わった
   場合は、数秒または数分待ってから、以前に選択した動画に戻ってみてください。
         </STATUS>
